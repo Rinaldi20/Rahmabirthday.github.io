@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.slideshow-container {
+  width: 100%; /* Make the container full width */
+  height: 100%; /* Make the container full height */
+  text-align: center;
+}
+
+.slides {
+  display: block;
+}
+
+#myVideo {
+  display: none; /* Sembunyikan video secara default */
+}
+
+.slide {
+  width: 100%; /* Make the image full width */
+  height: 100%; /* Make the image full height */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.video-container {
+  width: 100%; /* Make the image full width */
+  height: 100%; /* Make the image full height */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+#finishText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #333;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
